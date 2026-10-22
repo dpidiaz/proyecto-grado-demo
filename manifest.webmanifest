@@ -4,7 +4,7 @@
   "short_name": "Clutter DEMO",
   "description": "Versión demo del Atlas y la biblioteca de lectura del proyecto de grado.",
   "lang": "es",
-  "start_url": "./",
+  "start_url": "./?source=homescreen",
   "scope": "./",
   "display": "standalone",
   "background_color": "#110d17",

@@ -376,7 +376,7 @@ function ensureLibraryMounted() {
   }
   libraryMounted = true;
   registerLibraryEvents();
-  $('#connection-state').textContent = navigator.onLine ? 'En línea · preparando medios offline' : 'Sin red · medios offline sin verificar';
+  $('#connection-state').textContent = navigator.onLine ? 'En línea' : 'Sin red · medios offline sin verificar';
   void refreshOfflineMediaStatus();
 }
 
@@ -390,7 +390,7 @@ async function refreshOfflineMediaStatus(registration = null) {
   const timeout = window.setTimeout(() => channel.port1.close(), 3000);
   const renderStatus = (status) => {
     if (!status || !Number.isFinite(status.expected)) {
-      state.textContent = navigator.onLine ? 'En línea · preparando medios offline' : 'Sin red · medios offline sin verificar';
+      state.textContent = navigator.onLine ? 'En línea' : 'Sin red · medios offline sin verificar';
       return;
     }
     const ready = `${status.cached}/${status.expected} medios guardados`;
@@ -407,23 +407,6 @@ async function refreshOfflineMediaStatus(registration = null) {
     channel.port1.close();
     const status = event.data;
     renderStatus(status);
-    if ((!status || status.cached < status.expected) && navigator.onLine && !offlineMediaCacheRequested) {
-      offlineMediaCacheRequested = true;
-      const cacheChannel = new MessageChannel();
-      const cacheTimeout = window.setTimeout(() => {
-        offlineMediaCacheRequested = false;
-        cacheChannel.port1.close();
-      }, 600000);
-      cacheChannel.port1.onmessage = (cacheEvent) => {
-        window.clearTimeout(cacheTimeout);
-        offlineMediaCacheRequested = false;
-        cacheChannel.port1.close();
-        renderStatus(cacheEvent.data);
-      };
-      cacheChannel.port1.start();
-      worker.postMessage({ type: 'CACHE_BUNDLED_MEDIA_OFFLINE' }, [cacheChannel.port2]);
-      return;
-    }
   };
   worker.postMessage({ type: 'GET_OFFLINE_MEDIA_STATUS' }, [channel.port2]);
 }
@@ -15614,6 +15597,33 @@ function registerEvents() {
     await deferredInstallPrompt.userChoice;
     deferredInstallPrompt = null;
     $('#install-button').hidden = true;
+  });
+  const iosInstallHelp = $('#ios-install-help-button');
+  const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  if (iosInstallHelp && isIos && !isStandalone) iosInstallHelp.hidden = false;
+  iosInstallHelp?.addEventListener('click', () => {
+    window.alert('Para agregar Clutter DEMO al inicio:\n1. Abre esta página en Safari.\n2. Toca Compartir (cuadro con flecha hacia arriba).\n3. Elige “Agregar a pantalla de inicio”.\n4. Confirma con “Agregar”.\n\nSi abriste el enlace desde otra app, primero ábrelo en Safari.');
+  });
+  $('#offline-download-button')?.addEventListener('click', () => {
+    const worker = navigator.serviceWorker?.controller;
+    if (!worker) {
+      window.alert('La app todavía está preparando el modo sin conexión. Déjala abierta unos segundos y vuelve a intentarlo.');
+      return;
+    }
+    offlineMediaCacheRequested = true;
+    const channel = new MessageChannel();
+    const timeout = window.setTimeout(() => { channel.port1.close(); offlineMediaCacheRequested = false; }, 600000);
+    channel.port1.onmessage = (event) => {
+      window.clearTimeout(timeout);
+      channel.port1.close();
+      offlineMediaCacheRequested = false;
+      void refreshOfflineMediaStatus();
+      const status = event.data;
+      window.alert(status ? `Medios guardados para uso sin conexión: ${status.cached} de ${status.expected}. Mantén esta página abierta mientras termina.` : 'No se pudo completar la descarga offline.');
+    };
+    channel.port1.start();
+    worker.postMessage({ type: 'CACHE_BUNDLED_MEDIA_OFFLINE' }, [channel.port2]);
   });
   window.addEventListener('online', () => {
     const state = $('#connection-state');
