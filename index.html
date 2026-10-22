@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4a2e69">
+    <meta name="description" content="Versión demo de Clutter, basada en el snapshot 799dc3f.">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./favicon.svg?v=clutter-1" type="image/svg+xml">
+    <link rel="icon" href="./icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="stylesheet" href="./styles.css?v=apa-credit-targets-v2">
+    <style>.demo-banner{position:fixed;z-index:999;left:50%;bottom:12px;transform:translateX(-50%);max-width:calc(100vw - 24px);padding:8px 14px;border:1px solid #9c70bb;border-radius:999px;background:#1c1426;color:#f1dffb;box-shadow:0 6px 24px #0008;font:700 11px system-ui,sans-serif;text-align:center}</style>
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('proyecto-grado-demo-799dc3f-theme')||'dark'}catch{document.documentElement.dataset.theme='dark'}</script>
+    <title>Clutter DEMO — Proyecto de grado</title>
+  </head>
+  <body>
+    <aside class="demo-banner" role="note">VERSIÓN DEMO · Snapshot 799dc3f · Los cambios se guardan solo en este navegador.</aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="menu-toggle button button-quiet" id="menu-toggle" type="button" aria-label="Mostrar menú" aria-controls="project-sidebar" aria-expanded="false">☰</button>
+        <a class="brand" href="./" aria-label="Clutter, inicio">
+          <span class="brand-mark" aria-hidden="true">PG</span>
+          <span><strong>Clutter</strong><small>PROYECTO DE GRADO</small></span>
+        </a>
+        <a class="topbar-atlas-link" id="topbar-atlas-link" href="#atlas" aria-label="Abrir el Atlas del proyecto">
+          <span class="topbar-atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.75 5.5h5.1c1.55 0 2.15.65 2.15 2v11c0-1.35-.6-2-2.15-2h-5.1v-11Z"/><path d="M19.25 5.5h-5.1c-1.55 0-2.15.65-2.15 2v11c0-1.35.6-2 2.15-2h5.1v-11Z"/><path d="M7 8.5h2.8M15 8.5h2"/></svg></span>
+          <span class="topbar-atlas-label">Atlas</span><span class="topbar-atlas-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="topbar-actions">
+          <span class="sync-state"><i aria-hidden="true"></i><span id="save-state">Lectura local</span></span>
+          <button class="button button-quiet focus-search-button" id="focus-search-button" type="button"><span aria-hidden="true">⌕</span> Buscar</button>
+          <button class="button button-quiet force-refresh-button" id="force-refresh-button" type="button" aria-label="Actualizar y renovar la caché" title="Actualizar la aplicación y renovar la caché"><span aria-hidden="true">↻</span><span>Actualizar</span></button>
+          <details class="topbar-youtube">
+            <summary aria-label="Abrir reproductor de YouTube" title="Música de YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="youtube-logo-shape" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></summary>
+            <div class="topbar-youtube-panel"><span>PLAYLIST · MÚSICA DEL PROYECTO</span><iframe title="Playlist de YouTube" src="https://www.youtube-nocookie.com/embed?listType=playlist&amp;list=PLCA07CA8E6C333729&amp;rel=0" width="300" height="169" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a href="https://youtube.com/playlist?list=PLCA07CA8E6C333729&amp;si=CGpY3bJiWUBe7FJE" target="_blank" rel="noreferrer">Abrir playlist en YouTube ↗</a></div>
+          </details>
+          <details class="tools-menu"><summary aria-label="Herramientas del proyecto" title="Herramientas">⋯</summary><div class="tools-menu-panel">
+            <button class="button button-quiet theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Activar tema oscuro"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Tema oscuro</span></button>
+            <button class="button button-quiet" id="github-sync-button" type="button" hidden>Sincronización desactivada en la demo</button>
+            <button class="button button-quiet" id="install-button" hidden>Instalar app</button>
+            <button class="button button-quiet" id="export-button">Exportar copia</button>
+            <button class="button button-quiet" id="export-project-button" type="button">Exportar proyecto completo</button>
+            <button class="button button-quiet" id="download-historical-backup-button" type="button">Descargar respaldo histórico · 202 entradas</button>
+            <button class="button button-quiet" id="import-button">Importar copia</button>
+            <button class="button button-quiet" id="review-content-corrections-button" type="button">Revisar correcciones APA 7</button>
+          </div></details>
+          <input id="import-input" type="file" accept="application/json,.json" hidden>
+        </div>
+      </header>
+
+      <button class="nav-scrim" id="nav-scrim" type="button" aria-label="Cerrar menú" hidden></button>
+      <div class="workspace">
+        <aside class="sidebar" id="project-sidebar" aria-label="Navegación del proyecto" aria-hidden="true" inert>
+          <div class="project-card">
+            <span class="eyebrow">ESPACIO DE TRABAJO</span>
+            <h2>Proyecto de grado</h2>
+            <p>Recuperación y continuación</p>
+          </div>
+          <nav class="nav-list" id="nav-list">
+            <button class="nav-item is-active" data-filter="home"><span class="nav-glyph">⌂</span> Inicio</button>
+            <button class="nav-item" data-filter="search"><span class="nav-glyph">⌕</span> Buscar <span class="nav-count">Ctrl K</span></button>
+            <button class="nav-item" data-filter="atlas"><span class="nav-glyph">⌘</span> Atlas</button>
+            <details class="sidebar-more">
+              <summary class="nav-item"><span class="nav-glyph">⋯</span> Más opciones <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+              <div class="sidebar-more-panel">
+                <button class="nav-item" data-filter="all"><span class="nav-glyph">▤</span> Biblioteca de entradas <span class="nav-count" id="count-all">0</span></button>
+                <button class="nav-item" data-filter="writing"><span class="nav-glyph">¶</span> Entradas, notas y decisiones <span class="nav-count" id="count-writing">0</span></button>
+                <button class="nav-item" data-filter="source"><span class="nav-glyph">↗</span> Fuentes APA 7 <span class="nav-count" id="count-source">0</span></button>
+                <button class="nav-item" data-filter="apa-audit"><span class="nav-glyph">¶</span> Cotejo de citas APA 7</button>
+                <button class="nav-item" data-filter="figure-credits"><span class="nav-glyph">▧</span> Créditos de figuras <span class="nav-count" id="count-figure-credits">0</span></button>
+                <button class="nav-item" data-filter="task"><span class="nav-glyph">□</span> Tareas <span class="nav-count" id="count-task">0</span></button>
+              </div>
+            </details>
+          </nav>
+          <div class="sidebar-bottom">
+            <div class="preservation-note">
+              <span class="note-icon">↗</span>
+              <div><strong>Todo el proyecto dentro de la PWA</strong><p>El contenido, el Atlas y los medios necesarios están incluidos. Exporta un proyecto completo para respaldarlo o restaurarlo. Los originales se conservan como archivo histórico.</p></div>
+            </div>
+            
+          </div>
+        </aside>
+
+        <main class="main-area">
+          <h1 class="visually-hidden" id="app-page-title" hidden></h1>
+          <div id="view-heading-mount"></div>
+          <template id="view-heading-template">
+          <section class="page-heading">
+            <div>
+              <span class="eyebrow" id="view-kicker">ATLAS EDITORIAL</span>
+              <h1 id="view-title">Atlas del proyecto</h1>
+              <p class="heading-copy" id="view-description">Recorre el Atlas o abre la biblioteca para leer las entradas.</p>
+            </div>
+          </section>
+          </template>
+
+          <section class="home-page" id="home-page" aria-label="Inicio del proyecto">
+            <div class="home-hero">
+              <div class="home-hero-copy"><span class="eyebrow">CUADERNO · INVESTIGACIÓN Y DISEÑO</span><h2>PROYECTO<br>DE GRADO</h2><p>Recuperación y continuación de un proyecto académico de diseño de comunicación visual.</p><small>Josué David Díaz Ponce · PGDG 2026</small></div>
+              <div class="home-hero-actions"><button class="button button-primary" type="button" data-filter="atlas">Abrir el Atlas <span aria-hidden="true">→</span></button></div>
+            </div>
+          </section>
+
+          <div id="atlas-view-mount"></div>
+          <template id="atlas-overview-template">
+          <section class="atlas-overview" id="atlas-overview" aria-label="Atlas editorial del proyecto">
+            <nav class="breadcrumbs atlas-breadcrumbs" aria-label="Migas de pan"><button type="button" id="library-home">Biblioteca de entradas</button><span>›</span><span>Atlas</span><span>›</span><span>Proyecto de grado</span></nav>
+            <div class="atlas-overview-intro"><div><span class="eyebrow">ATLAS · ESTRUCTURA DEL LIBRO INDB</span><h2>PROYECTO<br>DE GRADO</h2><p>El recorrido sigue el orden y la jerarquía de tus documentos de InDesign. El contenido se conserva como entradas; la guía universitaria PGDG queda como referencia para revisar requisitos.</p></div><div class="atlas-summary" id="atlas-summary"></div></div>
+            <div class="section-toolbar atlas-toolbar">
+              <label class="section-search"><span class="visually-hidden">Buscar en este atlas</span><input id="atlas-search" type="search" placeholder="Número, título o texto" aria-label="Buscar en este atlas"></label>
+              <span class="atlas-result-count" id="atlas-result-count"></span>
+            </div>
+            <div class="atlas-search-results" id="atlas-search-results" aria-live="polite" hidden></div>
+            <div class="atlas-card-grid" id="atlas-phase-grid"></div>
+            <p class="atlas-reading-note"><strong>Jerarquía del Atlas y APA 7</strong><br>Como guía de organización, el capítulo ocupa el nivel superior y cada nivel anidado corresponde al siguiente nivel APA, hasta cinco. “Entrada” nombra la unidad de contenido del Atlas; su posición en el árbol determina su nivel. Se conserva la numeración del índice del proyecto; APA no exige numerar encabezados y la guía de la carrera determina el formato final. Arrastra capítulos, apartados o entradas para reordenarlos. <em>Borrar</em> un capítulo conserva sus entradas en “Por ubicar”; × elimina una entrada de la biblioteca. Ambas acciones piden confirmación.</p>
+          </section>
+          </template>
+
+          <section class="section-detail" id="section-detail" aria-label="Recorrido por la sección" hidden>
+            <nav class="breadcrumbs" aria-label="Migas de pan"><button type="button" id="back-to-atlas">Atlas</button><span>›</span><span>Proyecto de grado</span><span>›</span><span id="section-breadcrumb">Sección</span></nav>
+            <div class="section-hero">
+              <div class="section-hero-copy"><span class="eyebrow" id="section-kicker">ATLAS DETALLADO</span><h2 id="section-title">Sección</h2><p id="section-description"></p></div>
+              <div class="section-total"><strong id="section-entry-total">0</strong><span>entradas</span></div>
+            </div>
+            <div class="section-toolbar">
+              <button class="button button-quiet" type="button" id="back-to-sections">← Atlas</button>
+              <button class="button button-quiet atlas-clear-focus" type="button" id="atlas-clear-focus" hidden>Quitar foco</button>
+              <div class="atlas-disclosure-controls" role="group" aria-label="Mostrar u ocultar todos los capítulos">
+                <button type="button" class="button button-quiet" id="atlas-expand-all">Desplegar todo</button>
+                <button type="button" class="button button-quiet" id="atlas-collapse-all">Cerrar todo</button>
+              </div>
+              <label class="section-search"><span class="visually-hidden">Buscar en esta sección</span><input id="section-search" type="search" placeholder="Número, título o texto" aria-label="Buscar en esta sección"></label>
+            </div>
+            <div class="chapter-list" id="chapter-list"></div>
+            <p class="atlas-reading-note"><strong>Índice de la sección</strong><br>Los títulos y grupos orientan la navegación; cada botón «Abrir en Entradas» lleva al contenido de lectura.</p>
+          </section>
+
+          <section class="figure-credits-page" id="figure-credits-page" aria-label="Créditos de figuras generados" hidden>
+            <div class="figure-credits-heading">
+              <div><span class="eyebrow">CIERRE DOCUMENTAL · LISTADO AUTOMÁTICO</span><h2>Créditos de figuras</h2><p>Reúne las figuras recuperadas del documento y las imágenes añadidas, con sus datos de procedencia. Los campos pendientes quedan señalados para revisión.</p></div>
+              <div class="figure-credits-actions"><button class="button button-quiet" id="copy-figure-credits" type="button">Copiar listado</button><button class="button button-primary" id="download-figure-credits" type="button">Descargar .txt</button></div>
+            </div>
+            <div class="figure-credits-notice"><strong>Revisión necesaria</strong><span>Este listado apoya el anexo institucional; no sustituye las referencias APA 7 ni confirma por sí mismo permisos de uso. Comprueba los requisitos de tu universidad antes de entregar.</span></div>
+            <div class="figure-credits-list" id="figure-credits-list"></div>
+            <div class="figure-reference-drafts" id="figure-reference-drafts"></div>
+          </section>
+          <section class="figure-credits-page apa-audit-page" id="apa-audit-page" aria-label="Control interno de citas y referencias APA 7" hidden>
+            <div class="figure-credits-heading"><div><span class="eyebrow">CONTROL INTERNO · BIBLIOTECA PWA</span><h2>Control de citas APA 7</h2><p>Se actualiza desde las entradas y fuentes que están guardadas en esta PWA.</p></div></div>
+            <div class="figure-credits-notice"><strong>Las coincidencias son candidatas</strong><span>El detector enlaza autor y año cuando puede. Una coincidencia no demuestra que la fuente respalde la afirmación; una ausencia puede ser un límite del detector. Confirma los casos ambiguos y registra la decisión en la entrada correspondiente.</span></div>
+            <div class="apa-audit-summary" id="current-apa-audit-summary" aria-live="polite"></div>
+            <section class="figure-reference-drafts"><h3>Inventario de referencias en una lista alfabética</h3><p>El inventario reúne en orden alfabético las fuentes candidatas de la PWA. Los duplicados textuales se muestran una vez y mantienen enlaces a sus fichas de origen. Las referencias vinculadas a créditos de figuras se conservan en la lista APA y se identifican como atribuciones visuales; no se confunden con citas del cuerpo. “Sin cita detectada” es una alerta para cotejar, no confirma que la fuente sea huérfana. Criterio de formato: <a href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/reference-list" target="_blank" rel="noopener noreferrer">APA Style, lista de referencias</a>.</p><div class="apa-audit-list apa-unified-reference-list" id="current-apa-audit-references"></div></section>
+            <section class="figure-reference-drafts"><h3>Citas encontradas en el contenido actual</h3><p>La lista se vuelve a calcular al abrir el control. Los enlaces llevan a la entrada y a la fuente actualmente incluidas en la PWA.</p><div class="apa-audit-list" id="current-apa-audit-citations"></div></section>
+            <details class="apa-audit-occurrences" id="apa-historical-snapshot"><summary>Archivo de auditoría APA histórica · consulta opcional</summary>
+              <div class="figure-credits-notice"><strong>Antecedente archivado, fuera del control actual</strong><span>Este registro se conserva dentro del paquete para consulta histórica. El control vigente se calcula únicamente desde las entradas y fuentes guardadas en la PWA; abrir esta sección no modifica esos datos.</span></div>
+              <p class="apa-audit-source" id="apa-audit-source"></p>
+              <div class="apa-audit-summary" id="apa-audit-summary" aria-live="polite"></div>
+              <section class="figure-reference-drafts"><h3>Citas candidatas de esa instantánea</h3><div class="apa-audit-list" id="apa-audit-citations"></div></section>
+              <section class="figure-reference-drafts"><h3>Referencias históricas sin coincidencia automática</h3><p>Son candidatas para revisión; no se consideran referencias huérfanas confirmadas.</p><div class="apa-audit-list" id="apa-audit-references"></div></section>
+              <details class="apa-audit-occurrences"><summary>Ver las menciones detectadas en el documento de origen</summary><div class="apa-audit-list" id="apa-audit-occurrences-list"></div></details>
+              <p id="apa-audit-limitations" class="apa-audit-limitations"></p>
+              <details class="apa-audit-occurrences apa-review-register">
+                <summary>Registro manual de discrepancias APA <span id="apa-review-case-count"></span></summary>
+                <div class="figure-credits-notice"><strong>Antecedente importado para conservar trazabilidad</strong><span>Los estados y propuestas son una instantánea histórica, no un estado vigente ni instrucciones para consultar los PDF/IDML. Confirma cada punto con las fuentes ya guardadas en esta PWA; si falta evidencia, mantenlo pendiente.</span></div>
+                <p class="apa-audit-source" id="apa-review-register-source"></p>
+                <div class="apa-audit-list" id="apa-review-cases"></div>
+              </details>
+            </details>
+          </section>
+          <div id="library-mount"></div>
+          <template id="library-template">
+          <section class="workspace-grid library-feed-page" aria-label="Biblioteca de entradas">
+            <aside class="reader-sequence-rail" id="reader-sequence-rail" aria-label="Navegación de apartados y entradas" hidden>
+              <section class="reader-chapter-picker" aria-label="Ir a apartado"><span>IR A APARTADO</span><div class="reader-phase-groups" id="reader-phase-groups" aria-label="Apartados agrupados por fase"></div></section>
+              <div class="reader-sequence-heading"><span class="eyebrow">ESTE APARTADO</span><strong id="reader-sequence-title">Apartado</strong><small id="reader-sequence-progress"></small></div>
+              <nav class="reader-sequence-links" id="reader-sequence-links" aria-label="Entradas del apartado"></nav>
+              <details class="reader-mobile-entry-index" id="reader-mobile-entry-index" open>
+                <summary><span>ENTRADAS DE ESTE APARTADO</span><strong id="reader-mobile-current-entry">Entrada actual</strong><small id="reader-mobile-entry-progress"></small></summary>
+                <nav class="reader-sequence-links" id="reader-mobile-sequence-links" aria-label="Entradas del apartado"></nav>
+              </details>
+            </aside>
+            <div class="entry-panel">
+              <div class="list-toolbar">
+                <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Buscar entradas…" aria-label="Buscar entradas"></label>
+                <label class="sort-select status-select"><span class="visually-hidden">Filtrar por estado</span><select id="status-filter"><option value="all">Todos los estados</option><option value="Borrador">Borrador</option><option value="En revisión">En revisión</option><option value="Verificada">Verificada</option><option value="Archivada">Archivada</option></select></label>
+                <span class="sequence-label">Recorrido del INDB</span>
+                <button class="button button-primary new-entry-button" id="new-entry-button" type="button">＋ Nueva entrada</button>
+              </div>
+              <div class="new-entry-mount" id="new-entry-mount" hidden></div>
+              <section class="entry-list" id="entry-list" aria-label="Entradas del proyecto, ordenadas según el recorrido del INDB" aria-busy="false"></section>
+              <div class="empty-state" id="empty-state" hidden>
+                <span class="empty-mark">⌕</span><h2>No hay entradas que mostrar</h2><p>Ajusta la búsqueda o cambia la vista.</p>
+              </div>
+              <div class="list-footer"><span id="visible-count">0 entradas</span><span>Lectura local</span></div>
+            </div>
+
+            <article class="editor-panel reader-panel" id="editor-panel" aria-label="Lectura de entrada" hidden>
+              <div class="editor-topline">
+                <div class="editor-kind"><span class="kind-dot" id="kind-dot"></span><span id="editor-kind-label">ENTRADA</span></div>
+                <div class="editor-actions"><button class="back-to-section" id="back-to-section" type="button" hidden>← Volver a la sección</button><span class="save-indicator" id="entry-save-state">Lectura</span></div>
+              </div>
+              <h2 class="reader-title" id="reader-title">Selecciona una entrada para leerla</h2>
+              <div class="reader-meta" id="reader-meta"></div>
+              <div class="reader-content" id="reader-content" aria-live="polite">El texto completo aparecerá aquí.</div>
+              <div class="editor-footer"><span id="word-count">0 palabras</span><span id="updated-label">Contenido recuperado</span></div>
+              <div class="local-data-note"><span aria-hidden="true">◉</span><p>Esta demo no se conecta con GitHub ni modifica el repositorio de desarrollo. Los cambios realizados aquí quedan guardados solo en este navegador.</p></div>
+            </article>
+          </section>
+          <footer class="page-footer"><span>Lectura continua. La estructura y los pendientes permanecen en el Atlas.</span><span id="connection-state">Disponible sin conexión</span></footer>
+          </template>
+        </main>
+      </div>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script src="./atlas-outline.js?v=preliminary-entries-4" defer></script>
+    <script src="./numbering.js?v=automatic-numbering-v4" defer></script>
+    <script src="./app.js?v=automatic-numbering-v4" defer></script>
+  </body>
+</html>

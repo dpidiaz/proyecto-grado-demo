@@ -1,0 +1,372 @@
+{
+  "format": "clutter-pwa-apa-review-register",
+  "version": 1,
+  "provenance": {
+    "artifact": "REGISTRO-CORRECCIONES-APA-2026-10-18.csv",
+    "sha256": "77b675e7fd443b65f8c6e33585ce3feadad5a8a219554018a5f508131fdef297",
+    "note": "Copia íntegra de un registro manual histórico. Los estados son los que constaban en ese registro; no sustituyen el estado actual de las entradas PWA."
+  },
+  "interpretation": "No se coteja ni actualiza contra PDF/IDML en el flujo actual. Úsese como antecedente interno: resolver cada punto con evidencia ya incorporada a la PWA; si falta, mantenerlo explícitamente pendiente.",
+  "cases": [
+    {
+      "id": "APA-001",
+      "priority": "Alta",
+      "issue": "Cita Becker (2018) sin entrada en la lista principal",
+      "sourceLocation": "PDF p. 15 (marzo) y p. 29 (octubre); IDML REF-087 solo menciona la portada",
+      "proposedCorrection": "Referencia candidata: Becker, J. (2018). The minimalist home: A room-by-room guide to a decluttered, refocused life. WaterBrook. El año y los datos corresponden a la muestra oficial de la primera edición, pero cotejar con el ejemplar que realmente se consultó y resolver el rol de Eric Stanford antes de cerrar. Reescribir la síntesis del cuerpo con el alcance respaldado en las pp. 4 y 10–14 de la muestra; separar el análisis de tipografía, márgenes y paleta como observación visual propia cotejada con el ejemplar. No afirmar sostenibilidad con evidencia actual.",
+      "dependency": "Confirmar si el autor consultó la primera edición; establecer el rol APA de Eric Stanford con guía facultativa; revisar el libro completo o el ejemplar consultado para la paráfrasis y las observaciones visuales; eliminar o aportar fuente para sostenibilidad.",
+      "recordedStatus": "Primera edición/copyright 2018 y metadatos de WaterBrook cotejados en adelanto oficial; la muestra respalda parcialmente el pasaje. No cerrar: no se identificó el ejemplar consultado, sigue sin resolverse el crédito ‘with Eric Stanford’, y sostenibilidad/características gráficas requieren cotejo separado.",
+      "evidence": "El PDF octubre p. 29 atribuye a Becker (2018) una síntesis sobre espacio doméstico, tiempo/energía/atención, autogestión, bienestar y sostenibilidad, además de observaciones gráficas. El adelanto oficial WaterBrook muestra título/subtítulo, ISBN 978-1-60142-799-1, sello, página legal ‘Copyright © 2018’ y ‘2018—First Edition’; APA 7 indica usar fecha de copyright. Las páginas impresas 4 y 10–14 del adelanto respaldan parcialmente calidad de vida, rechazo de minimalismo como mera estética, estrés/atención y tiempo/energía; la muestra no respalda sostenibilidad ni confirma tipografía, márgenes o paleta. La portada dice ‘Joshua Becker with Eric Stanford’; su rol y el tratamiento APA de este crédito no se determinaron. Fuentes: https://waterbrookmultnomah.com/wp-content/uploads/pdf/Sneak-Peek-Minimalist-Home-1.pdf ; https://www.penguinrandomhouse.com/books/250883/the-minimalist-home-by-joshua-becker/9781601427991/ ; https://apastyle.apa.org/style-grammar-guidelines/references/examples/book-references"
+    },
+    {
+      "id": "APA-002",
+      "priority": "Alta",
+      "issue": "Referencia de Graphic Design Thinking fechada 2014 aunque editorial registra 2011",
+      "sourceLocation": "IDML REF-042; PDF de marzo pp. 76, 78, 83–85; PDF de octubre: cita narrativa/textual Lupton (2011), p. 81, cita p. 19; Lupton (2014), pp. 104–105",
+      "proposedCorrection": "No cambiar REF-042 ni las citas de 2014 por tema/año. Verificar la cita textual de p. 81 contra el ejemplar; identificar cuál de las obras Lupton de la lista respalda las citas de pp. 104–105 y corregir la referencia/citas solo tras confirmar la edición.",
+      "dependency": "Ejemplar consultado para cotejar p. 19; identificación de la obra citada en pp. 104–105; versión académica base",
+      "recordedStatus": "Ubicaciones de octubre reconciliadas; fecha editorial candidata 2011. Correspondencia del pasaje p. 81 y citas 2014 sin verificar.",
+      "evidence": "Princeton Architectural Press registra Graphic Design Thinking: Beyond Brainstorming con fecha 09-01-2011 e ISBN 9781568989792: https://papress.com/collections/books/products/graphic-design-thinking-beyond-brainstorming. El PDF de octubre p. 81 imprime la cita textual de p. 19; su correspondencia con el libro no se ha cotejado. Las dos citas de 2014 están en pp. 104–105 y no son las ubicaciones del PDF de marzo."
+    },
+    {
+      "id": "APA-003",
+      "priority": "Alta",
+      "issue": "Referencia de Thinking with Type (2.ª ed.) fechada 2014",
+      "sourceLocation": "IDML REF-043; PDF de octubre pp. 104-105: citas Lupton (2014), ambiguas entre REF-042 y REF-043",
+      "proposedCorrection": "No cambiar el ano ni las citas hasta identificar la edicion consultada y determinar si las citas de pp. 104-105 corresponden a esta obra o a REF-042.",
+      "dependency": "Ejemplar consultado; adjudicar citas de pp. 104-105; version academica base",
+      "recordedStatus": "Ano/edicion 2010 identificado como candidato; relacion con las citas actuales sin confirmar.",
+      "evidence": "Google Books identifica la segunda edicion de Thinking with Type como 2010, ISBN 9781568989693: https://books.google.com/books/about/Thinking_with_Type_2nd_revised_and_expan.html?id=Y_NVRQAACAAJ. El catalogo actual de la editorial describe la tercera edicion de 2024, no el ejemplar usado: https://papress.com/collections/bestsellers/products/thinking-with-type-3-edition"
+    },
+    {
+      "id": "APA-004",
+      "priority": "Alta",
+      "issue": "Referencia Chayka (2024) combina año de edición nueva con subtítulo de 2020",
+      "sourceLocation": "IDML REF-013; texto PDF pp. 18, 22–25, 37, 51, 54 y 56",
+      "proposedCorrection": "Separar las obras/ediciones que realmente se consultaron; revisar especialmente la cita textual p. 67 atribuida a 2024 y aplicar fechas de reedición según APA",
+      "dependency": "Confirmar qué edición(es) se usaron",
+      "recordedStatus": "Discrepancia bibliográfica confirmada; elección de edición pendiente",
+      "evidence": "Bloomsbury cataloga edición de 2020 como The Longing for Less: Living with Minimalism y edición de bolsillo de 2024 como The Longing for Less: What's Missing from Minimalism, con nuevo epílogo: https://www.bloomsbury.com/us/longing-for-less-9781639734191/"
+    },
+    {
+      "id": "APA-005",
+      "priority": "Alta",
+      "issue": "Dos referencias ICD fechadas 2022 confluyen en citas ICD (2022) sin sufijo",
+      "sourceLocation": "IDML REF-031 y REF-032; citas visibles en PDF pp. 18, 21, 25, 30, 34, 46–48",
+      "proposedCorrection": "Identificar la obra usada en cada afirmación; ordenar las referencias y aplicar 2022a/2022b consistentemente",
+      "dependency": "Identificar qué obra respalda cada afirmación, confirmar la obra consultada y distinguir la página vigente sin fecha de REF-031/REF-032. Identificar las obras ICD consultadas y mapear citas restantes a textos/localizadores; no asignar sufijos ni usar la página vigente como sustituto sin confirmación.",
+      "recordedStatus": "Ambigüedad ICD (2022) sigue abierta para las citas restantes; atribución eliminada de PWA 4.1.4/4.1.5 y copia v35.",
+      "evidence": "Dos títulos institucionales distintos en la lista principal En p. 68 de v34 aparece una cita distinta, (Institute for Challenging Disorganization, s. f.), basada en la página institucional vigente sin fecha visible. Se registra como candidata separada y no se asigna a REF-031 o REF-032; no resuelve cuál obra de 2022 respalda las menciones existentes. Pp. 57–58 ya no contienen la atribución ICD (2022) en PWA/PDF v35; la ambigüedad REF-031/REF-032 permanece en otras ubicaciones."
+    },
+    {
+      "id": "APA-006",
+      "priority": "Alta",
+      "issue": "Grupo de citas sin referencia candidata en la lista principal: NIMH",
+      "sourceLocation": "PDF de octubre p. 46",
+      "proposedCorrection": "Confirmar el documento realmente consultado. No atribuir la afirmación al NIMH ni añadir un registro por semejanza temática. Si el autor confirma Nelson et al. (2023), reformular la frase para ceñirse a caos doméstico percibido, responsividad y revelación en díadas madre-adolescente; no afirmar cooperación general. Si confirma Vorstenbosch et al. (2015), limitar a acumulación problemática y conflicto relacional. En ausencia de la fuente original, retirar o dejar la afirmación como pendiente de respaldo. Alternativa de reformulación solo si se desea describir trastorno de acumulación y se acepta incorporar una fuente nueva: limitar la frase a que en una muestra clínica adulta la gravedad del trastorno/clutter se asoció con mayor conflicto familiar (Davidson et al., 2020).",
+      "dependency": "Se necesita fuente usada por autor",
+      "recordedStatus": "Candidato oficial NIMH (2022) localizado, pero no respalda la afirmación sobre orden doméstico/clutter; documento realmente consultado pendiente de identificar; fuente primaria alternativa 2020 identificada, no prueba de fuente consultada",
+      "evidence": "NIMH (2022) se atribuye a la afirmación de que mantener el orden deteriora la comunicación y cooperación familiar; no hay entrada NIMH en las 83 referencias extraídas. La página oficial del NIMH sobre TOC trata orden/simetría y acomodar objetos, no esta afirmación. Se localizó una nota oficial NIMH del 29-09-2022 sobre Family Check-Up y reducción del riesgo suicida juvenil; menciona apoyo parental, solución de problemas y comunicación, pero no trata orden doméstico ni clutter y no respalda la frase. También se hallaron estudios primarios cercanos, no equivalentes ni confirmación de la fuente consultada: Nelson et al. (2023), 109 díadas madre-adolescente, caos doméstico percibido/responsividad/revelación, DOI 10.1037/fam0001074; Vorstenbosch et al. (2015), acumulación problemática/acomodación familiar/conflicto relacional, DOI 10.1016/j.jocrd.2015.08.001. Fuente NIMH candidata: https://www.nimh.nih.gov/news/science-updates/2022/family-based-intervention-lowers-long-term-suicide-risk-in-youth. Cambridge University Press publica Davidson et al. (2020), estudio de 60 adultos en tratamiento por trastorno de acumulación: mayor gravedad se asoció con mayor conflicto familiar y menor frecuencia de visitas al hogar. Es una fuente primaria alternativa para una formulación limitada al trastorno clínico, no valida la atribución NIMH ni la causalidad sobre mantener el orden. https://www.cambridge.org/core/journals/children-australia/article/abs/family-and-social-functioning-in-adults-with-hoarding-disorder/DFB5CA215CD1E4674580924F6634C58E"
+    },
+    {
+      "id": "APA-007",
+      "priority": "Alta",
+      "issue": "Grupo de citas sin referencia candidata en la lista principal: OMS",
+      "sourceLocation": "PDF octubre pp. 68, 70 y 72 (OMS, 2022) y pp. 57, 207 (OMS, 2023); PDF marzo p. 29 (OMS, 2023) y p. 50 (OMS, 2021)",
+      "proposedCorrection": "P. 68 se corrigió en PWA/v28; pp. 70–71 en v29; pp. 72–73 se actualizaron en PWA 1.3.2.3 y copia derivada v31. No reincorporar afirmaciones causales o institucionales sin fuente/datos. Mantener abiertas las citas OMS restantes hasta identificar la obra consultada. P. 69 corregida en PWA y copia derivada v32; SHA-256 2f70416232b031780b48f25d4eeeaba842b9c6ea1ea1ea13dbf0684fc560981e. Render y extracción verificados. En v34 se actualizó p. 68 y la PWA; la página ICD sin fecha se mantiene como candidata distinta de ICD 2022a/2022b, sin incorporarla todavía a la lista final. Pp. 57–58 corregidas en PWA y copia v35; mantener abiertas identificación de fuentes realmente consultadas y reconstrucción de bibliografía. No presentar referencias añadidas como originalmente consultadas.",
+      "dependency": "Recuperar/cotejar bibliografía vigente y ejemplares consultados; revisar por separado las menciones OMS (2021/2023); confirmar la fuente web y las obras realmente usadas; localizar la estadística original y documentos institucionales; reconstruir y cotejar la bibliografía. No tomar fuentes candidatas como las consultadas. Confirmar ejemplares realmente consultados, reconstruir y cotejar bibliografía final, revisar OPS integral y obtener evidencia local para cualquier claim sobre estudiantes/Guatemala.",
+      "recordedStatus": "Pp. 57–58 corregidas en PWA/PDF v35; extracción y render verificados. APA-007 abierto por identificación de fuentes realmente consultadas y bibliografía completa; el PDF OPS íntegro respondió 403.",
+      "evidence": "PDF octubre pp. 68, 70, 72 (OMS, 2022), pp. 57 y 207 (OMS, 2023; p. 207 repite parte de p. 57); PDF marzo p. 29 (OMS, 2023) y p. 50 (OMS, 2021). El Global Health Observatory de la OMS reproduce la definición de capacidades, afrontamiento, trabajo productivo y contribución comunitaria, sin fecha editorial visible. El documento oficial WPR/RC52/14 de 2001 contiene la idea de equilibrio de la persona consigo misma y con su ambiente, con factores físicos, psicológicos, sociales, culturales y espirituales. Son fuentes candidatas cercanas, no evidencia de cuáles consultó el autor. Ninguna respalda por sí sola las afirmaciones específicas sobre Clutter, las condiciones emocionales/sociales/ambientales enumeradas ni la afirmación de cortisol y multitarea. El PDF actual carece de lista de referencias visible. La PWA 1.3.2.3 y el PDF derivado v31 (pp. 72–73) separan el marco general OMS (2022) y los localizadores del Modelo Educativo URL (VRAC, 2023) de las afirmaciones no verificadas sobre políticas, programas y efectos del Clutter. Se verificaron extracción y render; la PWA mostró GitHub al día. El original permanece intacto. La PWA 1.3.2.1 y v32 corrigen p. 69: se retira el incremento MSPAS 2023 no comprobado, no se presenta prevalencia/causalidad como hecho y no se afirma ausencia institucional. El conjunto MSPAS de 20 causas principales de 2023 no valida la tendencia y no prueba ausencia de casos. La versión v33 también sustituye en p. 69 las afirmaciones no verificadas atribuidas a Frost y Steketee (2010) sobre atención/memoria y a Kondo (2014) sobre efectos empíricos de calma/productividad; la relación queda como pregunta de investigación. PWA guardada; se observó GitHub · al día. SHA-256 v33: a174da0c3f4044f62fb0cd2bbdf44a6840971ce4f36afac88c33b17b987cad8c. P. 68 v34 actualiza el pasaje sobre ICD (página institucional vigente sin fecha visible), funciones ejecutivas y contexto universitario. La página respalda solo la descripción general de desorganización crónica, no la causalidad o las relaciones específicas con estudiantes. La muestra oficial de Barkley (2015) revisada cubre TDAH/funciones ejecutivas; Becker (2022), según la ficha editorial, es una propuesta de desarrollo personal, no evidencia causal estudiantil. PWA 1.3.2.1 guardada, GitHub · al día. PDF v34 209 páginas, SHA-256 455087ada3fc88017e6f9a2593668a02d2e66f93f85285ce03e755ecae5fc456. En la copia derivada v35 y PWA 4.1.4/4.1.5 se actualizaron pp. 57–58: OMS (2022) queda limitada al marco mundial y estimación de 2019, OPS (2023) al contexto regional; se retiraron atribuciones no verificadas sobre Clutter/causalidad/Guatemala y referencias asociadas. PDF v35 209 páginas, SHA-256 c4bb12c712a8ea0d235b40a1187ac9366a851aacb0193329184d6c7a0e0733a7. Las referencias nuevas son candidatas editoriales, no identificación de la fuente usada. PWA remota blob c8103734abd28edb8637f36f2f75c792615f86d5."
+    },
+    {
+      "id": "APA-008",
+      "priority": "Alta",
+      "issue": "Grupo de citas sin referencia candidata: OPS y PNUD",
+      "sourceLocation": "PDF de octubre pp. 57–58; PDF preservado de marzo pp. 29–30",
+      "proposedCorrection": "No citar OPS/PNUD por mera afinidad temática. Si se confirma el informe OPS, usar su referencia corporativa APA 7 y citar solo los pasajes del informe que sostengan la afirmación; el resumen oficial confirma necesidades regionales y acción multisectorial, no la lista doméstica. Si se confirma el informe PNUD de 2023, limitar la paráfrasis a salud mental y tabaco, sus consecuencias socioeconómicas/pobreza y respuestas integradas; separar estos temas del clutter doméstico. Reformular o retirar las afirmaciones sobre hogares, clutter, cohesión social y prevención salvo que se localice una fuente y un pasaje independientes. Claims domésticos/clutter retirados de pp. 57–58; mantener solo alcance regional comprobable. Integrar referencia candidata si se confirma como fuente editorial añadida; no usar el informe PNUD salud mental-tabaco como respaldo de clutter.",
+      "dependency": "Identificar la obra usada; obtener el PDF OPS para cotejar completo; verificar pasajes y localizadores; localizar respaldo independiente para entorno doméstico/clutter y separar afirmaciones no sustentadas. Obtener y revisar OPS íntegro, confirmar fuente consultada e integrar bibliografía; encontrar respaldo independiente para afirmaciones sobre hogares, clutter y contexto local.",
+      "recordedStatus": "Pp. 57–58 reescritas en PWA/PDF v35, render verificable. Metadatos y sinopsis OPS cotejados, texto integral aún no revisado; APA-008 abierto.",
+      "evidence": "PDF octubre pp. 57–58 atribuye a OPS (2023) una lista sobre educación emocional, hogares saludables y prevención comunitaria, y al PNUD (2023) vínculos entre salud mental, productividad, cohesión social, pobreza y clutter doméstico. La ficha oficial OPS fecha el informe NASMA el 9-06-2023 y lo describe como análisis de necesidades regionales insatisfechas y recomendaciones multisectoriales; su PDF no pudo recuperarse (403/DSpace devolvió la aplicación web), por lo que no se concluye que el documento completo omita la lista. El PDF oficial PNUD de 18 páginas sí fue cotejado: su Issue Brief on Mental Health Conditions and Tobacco Use trata esa intersección, impactos socioeconómicos y pobreza dentro del vínculo con tabaco (pp. 1, 8–9), sin proponer orden doméstico/clutter. No se ha confirmado que ambas fueran las obras consultadas. Candidato temático alternativo, no equivalente, de UNDP Human Development Reports: Natalia Linou (2016), que conecta salud mental/bienestar, trabajo, comunidad y desarrollo; no atribuirle el año 2023 ni afirmaciones de clutter. Fuentes: https://www.paho.org/es/documentos/nueva-agenda-para-salud-mental-region-americas-informe-comision-alto-nivel-sobre-salud ; https://www.undp.org/asia-pacific/publications/issue-brief-mental-health-conditions-and-tobacco-use ; https://www.undp.org/sites/g/files/zskgke326/files/2023-10/undp-rbap-issue-brief-on-mental-health-and-tobacco-use_1.pdf ; https://hdr.undp.org/content/pursuit-happiness-paying-greater-attention-mental-health En v35 y PWA 4.1.4/4.1.5 se retiró la atribución OPS (2023) de claims específicos sobre hogares, educación emocional y clutter. La página oficial respalda solo alcance regional, necesidades de atención insatisfechas y recomendaciones generales; PDF integral inaccesible (403). Referencia candidata y DOI documentados; SHA-256 v35 c4bb12c712a8ea0d235b40a1187ac9366a851aacb0193329184d6c7a0e0733a7."
+    },
+    {
+      "id": "APA-009",
+      "priority": "Media",
+      "issue": "Cita Universidad Rafael Landívar (2023) sin referencia en lista de octubre; no equivale a Universidad Riviera (2021)",
+      "sourceLocation": "PDF de tesis p. 68 (página impresa 41); IDML REF-077; fuente oficial Modelo educativo de la Universidad Rafael Landívar (edición 2023), pp. impresas 6, 8, 9, 13–14 y 21",
+      "proposedCorrection": "Reescritura implementada en PWA 1.3.2.1 y 1.3.2.3 y en copia derivada v27, p. 68: limitar la atribución a lo que respalda el Modelo Educativo URL y marcar el vínculo con Clutter como interpretación del proyecto. Integrar la referencia APA 7 cuando se confirme la obra consultada y la base vigente.",
+      "dependency": "Recuperar o confirmar la lista bibliográfica y la base editables vigentes; integrar la referencia institucional completa si se confirma el uso. Véase v27 y su nota de erratas.",
+      "recordedStatus": "Corrección de alcance aplicada en PWA y copia derivada; fuente oficial cotejada. APA-009 abierto: falta referencia final y confirmar el ejemplar consultado/base académica vigente.",
+      "evidence": "El catálogo oficial confirma autoría institucional de Universidad Rafael Landívar, Vicerrectoría Académica (VRAC), año, editorial e ISBN. El modelo respalda formación integral y dimensiones cognitiva, emocional, relacional y espiritual, responsabilidad, sobriedad y autoconocimiento/autogestión; no respalda la transición vital/identidad/autonomía como causa de gestión del espacio ni uso de «social» o «equilibrar» en esa paráfrasis. REF-077 es otra obra"
+    },
+    {
+      "id": "APA-010",
+      "priority": "Alta",
+      "issue": "Grupo de citas teóricas sin referencia en la versión de marzo: Zimmerman, Kabat-Zinn y Bandura; solo Zimmerman aparece en la versión de octubre",
+      "sourceLocation": "PDF de octubre p. 78 (Zimmerman); PDF histórico de 169 páginas pp. 47–48 (Kabat-Zinn y Bandura)",
+      "proposedCorrection": "Cerrar APA-010 como grupo y mantener Zimmerman exclusivamente en APA-028. No añadir Kabat-Zinn ni Bandura a la bibliografía vigente salvo que se restaure contenido del PDF histórico; si se restaura, auditar sus obras/pasajes por separado.",
+      "dependency": "Resolver el uso de Zimmerman en APA-028; reabrir solo si se reincorporan pp. 47–48 del PDF histórico",
+      "recordedStatus": "Grupo desagregado con evidencia de extracción completa: Kabat-Zinn y Bandura son citas históricas ausentes de octubre; Zimmerman sigue pendiente y se gestiona en APA-028.",
+      "evidence": "La extracción completa del PDF vigente de 209 páginas encuentra Zimmerman (2000) una vez, en p. 78; no encuentra Kabat-Zinn ni Bandura. El PDF histórico de 169 páginas conserva las menciones de Kabat-Zinn (2003) y Bandura (1997) en pp. 47–48; ese contenido no forma parte del PDF vigente. Zimmerman se coteja en APA-028: el capítulo localizado define empoderamiento psicológico por competencia percibida, esfuerzos por ejercer control y comprensión sociopolítica, no la paráfrasis actual."
+    },
+    {
+      "id": "APA-011",
+      "priority": "Alta",
+      "issue": "Grupo de citas teóricas sin referencia candidata: Flavell, Schore, Diener et al.",
+      "sourceLocation": "PDF pp. 49–50",
+      "proposedCorrection": "Localizar obras y páginas originales",
+      "dependency": "Se necesita bibliografía de trabajo/notas del autor",
+      "recordedStatus": "Candidatas sin referencia; pendiente de identificar obra",
+      "evidence": "No se encontraron registros correspondientes en lista principal"
+    },
+    {
+      "id": "APA-012",
+      "priority": "Alta",
+      "issue": "Grupo de citas sin referencia candidata: Evans y McCoy; Martínez",
+      "sourceLocation": "PDF pp. 54, 56, 78",
+      "proposedCorrection": "Confirmar nombres completos, año, título y datos de publicación",
+      "dependency": "Se necesita fuente exacta",
+      "recordedStatus": "Candidatas sin referencia; pendiente de identificar obra",
+      "evidence": "No se encontraron registros correspondientes en lista principal"
+    },
+    {
+      "id": "APA-013",
+      "priority": "Media",
+      "issue": "Otros autores/años posiblemente sin referencia o con año discordante",
+      "sourceLocation": "PDF pp. 52–56",
+      "proposedCorrection": "Validar identidad de obra antes de insertar o corregir año",
+      "dependency": "Se necesita fuente exacta",
+      "recordedStatus": "Candidatas; pendiente de rastreo",
+      "evidence": "Bisquerra (2000), Goleman (1995), Wheeler (2018), Carver (2020), McAlary (2017); la lista contiene algunas obras de autores homónimos pero con otros años"
+    },
+    {
+      "id": "APA-014",
+      "priority": "Media",
+      "issue": "Citas a UNICEF Guatemala, ChildFund y campañas no mapeadas con claridad a lista principal",
+      "sourceLocation": "PDF octubre pp. 58–62, 87, 90, 93 y anexos",
+      "proposedCorrection": "Clasificar como fuente teórica, antecedente, entrevista o crédito; registrar según función y APA",
+      "dependency": "Conciliar cada campaña restante con la página efectivamente consultada e identificar el origen/licencia de cada imagen. Integrar las referencias confirmadas al listado final.",
+      "recordedStatus": "Mapeo parcial en v19 para #DIME y #QueNoTePase; el conjunto de campañas, referencias finales y créditos visuales permanece abierto.",
+      "evidence": "La copia v19 ya relaciona #DIME con la página de UNICEF Guatemala con s. f. (APA-025) y #QueNoTePase con el artículo de Domínguez (2025) (APA-027). Las fuentes restantes y la autoría/licencia de imágenes aún necesitan cotejo."
+    },
+    {
+      "id": "APA-015",
+      "priority": "Media",
+      "issue": "IDML tiene historia adicional con lista repetida y fragmento suelto",
+      "sourceLocation": "Historia IDML u1283; no está en lista PDF pp. 124–127",
+      "proposedCorrection": "Inspeccionar en InDesign; quitar de copia de corrección solo si se confirma como sobrante/desbordado",
+      "dependency": "Abrir INDD en InDesign",
+      "recordedStatus": "Anomalía textual confirmada; ubicación/estatus visual pendiente",
+      "evidence": "Historia repite Becker (2022), Chayka (2024), Kondo (2022) y termina con texto huérfano"
+    },
+    {
+      "id": "APA-016",
+      "priority": "Alta",
+      "issue": "La sección llamada «Créditos de figuras» es un índice y no acredita individualmente todas las imágenes",
+      "sourceLocation": "Story IDML u5752 y PDF preservado de marzo pp. 128–130; PDF octubre pp. 164 y 206",
+      "proposedCorrection": "Reconstruir créditos en una copia solo después de identificar cada imagen y su autor/fuente/licencia o permiso. Mantener índice de figuras separado de notas APA de crédito; no tratar la URL del pie como autoría confirmada ni completar datos por conjetura.",
+      "dependency": "Se requieren fuentes originales de las imágenes y cotejo con los 54 recursos visuales del Atlas",
+      "recordedStatus": "Brecha confirmada; índice de figuras corregido solo en copia de lectura v14; autoría/licencias de muchas imágenes siguen sin confirmar",
+      "evidence": "El PDF de marzo pp. 128–130 y Story u5752 enumeran 62 figuras con títulos y página de aparición; faltan los números 5, 6, 7 y 30. El PDF de octubre p. 164 solo muestra el encabezado «4.2 Créditos de figuras»; p. 206 contiene un índice separado con 39 figuras y omite la 27. En la comparación reproducible de ambos índices, 32 de 101 registros imprimen URL o una pista de crédito personal, pero esas pistas no constituyen atribución completa ni acreditan autoría/licencia; cinco fuentes de imagen genéricas aparecen aparte como REF-084–REF-088. Ver INDICES-FIGURAS-COMPARACION-MARZO-vs-OCTUBRE-2026.csv. En la copia derivada v14 el índice de lectura quedó visualmente recompuesto en pp. 206 (Figuras 27–40); esto no acredita créditos/autores/licencias faltantes ni modifica la fuente de octubre."
+    },
+    {
+      "id": "APA-017",
+      "priority": "Alta",
+      "issue": "No se ha confirmado norma institucional vigente",
+      "sourceLocation": "No aplica",
+      "proposedCorrection": "Usar APA 7 como estándar acordado y validar el formato institucional vigente antes de la entrega",
+      "dependency": "Solicitar lineamientos vigentes de carrera/facultad",
+      "recordedStatus": "Pendiente",
+      "evidence": "Solo se localizó una guía general antigua en el sitio URL; no acredita requisitos actuales"
+    },
+    {
+      "id": "APA-018",
+      "priority": "Alta",
+      "issue": "No se pudo cotejar el INDD de 16-04-2026 con las exportaciones de 31-03-2026",
+      "sourceLocation": "INDD preservado, IDML y PDF preservados",
+      "proposedCorrection": "Abrir en InDesign, generar IDML/PDF con nombres nuevos, comparar y decidir versión base",
+      "dependency": "Se requiere abrir/validar InDesign",
+      "recordedStatus": "Pendiente; originales intactos",
+      "evidence": "INDD es más reciente por fecha; la automatización no logró inspeccionarlo/exportarlo visualmente"
+    },
+    {
+      "id": "APA-019",
+      "priority": "Media",
+      "issue": "Posibles referencias huérfanas en la lista principal",
+      "sourceLocation": "Cribado de las 83 referencias contra cuerpo y anexos PDF pp. 1–122 y 132–169",
+      "proposedCorrection": "Comprobar atribuciones narrativas, menciones por título, tablas, pies y anexos antes de retirar o reformatear cualquier referencia",
+      "dependency": "Inspección de versión base y fuentes",
+      "recordedStatus": "Candidatos automáticos; no son huérfanas confirmadas",
+      "evidence": "Sin coincidencia explícita autor-año detectada: American Psychiatric Association (2013), Fundación Rosa Luxemburgo (2021), INAB (2023), MARN (2022, 2024), Moreno (2020), Sasaki (2021), Wood (2014). Las cinco fuentes visuales REF-084–088 se excluyeron a propósito."
+    },
+    {
+      "id": "APA-020",
+      "priority": "Crítica",
+      "issue": "Las páginas de referencias y créditos están vacías en el PDF candidato más reciente",
+      "sourceLocation": "PDF recibido del 18-10-2026, pp. 163–164; PDF de marzo, pp. 124–130",
+      "proposedCorrection": "Recuperar bibliografía y créditos desde el INDD/IDML vigente; reparar la exportación y verificar que aparecen en el PDF final",
+      "dependency": "Inspección y exportación en InDesign",
+      "recordedStatus": "Omisión confirmada visualmente; corrección pendiente",
+      "evidence": "Render visual: p. 163 solo muestra «4.1 REFERENCIAS» y p. 164 solo «4.2 CRÉDITOS DE FIGURAS». El cuerpo del PDF de octubre sí contiene citas autor-año."
+    },
+    {
+      "id": "APA-021",
+      "priority": "Alta",
+      "issue": "Índice de figuras omite la figura 27 y conserva una falta de ortografía",
+      "sourceLocation": "PDF recibido p. 206; Figura 27 existe en cuerpo p. 87",
+      "proposedCorrection": "Corrección aplicada solo en copia derivada v14 tras verificar visualmente el índice y las URLs; trasladar a la base editable cuando se identifique y regenerar el índice al exportar.",
+      "dependency": "Confirmar el texto vigente y editar InDesign",
+      "recordedStatus": "Corregido y verificado en copia derivada v14; pendiente corregir la fuente editable, que no está disponible",
+      "evidence": "La lista salta de Figura 26 a 28 aunque el cuerpo contiene Figura 27; aparece «incolucrados» en lugar de «involucrados» en el rótulo de Figura 28. La copia de lectura v14 conserva Figura 27 entre 26 y 28, corrige el pie ‘involucrados’ (p. 87) y recompone las filas/URLs 28 y 30 en p. 206; el original de octubre permanece intacto."
+    },
+    {
+      "id": "APA-022",
+      "priority": "Alta",
+      "issue": "Orden/ubicación de contenido por verificar tras el listado de figuras",
+      "sourceLocation": "PDF recibido p. 207",
+      "proposedCorrection": "Confirmar en InDesign que el orden y la ubicación sean intencionales antes de mover o eliminar contenido",
+      "dependency": "Inspección en InDesign",
+      "recordedStatus": "Anomalía visual confirmada; causa pendiente",
+      "evidence": "Después del listado de figuras, el crédito de la imagen 40 de OpenAI está en el área superior derecha, mientras la página retoma un encabezado y párrafo de la sección 1.3.2."
+    },
+    {
+      "id": "APA-023",
+      "priority": "Alta",
+      "issue": "Citas del PDF de octubre no pueden cruzarse con una lista de referencias porque la lista no se exportó",
+      "sourceLocation": "PDF recibido: cuerpo/anexos pp. 15–161 y 165–207",
+      "proposedCorrection": "Cruzar contra bibliografía vigente recuperada del documento editable; verificar cada cita, obra y localizador",
+      "dependency": "Lista bibliográfica vigente y versión base",
+      "recordedStatus": "Conteo automatizado; requiere adjudicación humana",
+      "evidence": "177 ocurrencias candidatas: 88 paréntesis con autor/año, 87 años parentéticos por adjudicar y 2 comunicaciones personales. Detalle: AUDITORIA-OCURRENCIAS-CITAS-PDF-2026-10-18-NUEVO.csv."
+    },
+    {
+      "id": "APA-024",
+      "priority": "Alta",
+      "issue": "La exportación de octubre conserva Chayka (2020), que no coincide con la referencia de 2024 del PDF/IDML de marzo",
+      "sourceLocation": "PDF octubre pp. 21, 36, 39–42, 64–65, 79–80, 82, 84; IDML REF-013 fechado 2024",
+      "proposedCorrection": "Identificar qué edición se consultó en cada pasaje; restituir referencia correcta y ajustar citas conforme APA",
+      "dependency": "Ejemplar/edición consultada",
+      "recordedStatus": "Discrepancia confirmada; edición usada pendiente",
+      "evidence": "Bloomsbury confirma que el título/subtítulo Living with Minimalism corresponde a 2020 (ISBN 9781635572100) y que la edición en rústica de 2024 lleva el subtítulo What’s Missing from Minimalism y un nuevo epílogo: https://www.bloomsbury.com/us/longing-for-less-9781635576795/ ; https://www.bloomsbury.com/us/longing-for-less-9781639734191/"
+    },
+    {
+      "id": "APA-025",
+      "priority": "Alta",
+      "issue": "La fuente principal de la campaña #DIME no está en el inventario de referencias",
+      "sourceLocation": "PDF octubre p. 87; página oficial de UNICEF Guatemala enlazada en el pie",
+      "proposedCorrection": "Aplicada parcialmente en v19: referencia UNICEF Guatemala (s. f.) con título oficial; retirar 2021 como fecha editorial y 2021–2022 como período no informado; retirar el rango de audiencia no respaldado; reparar pie/URL de Figura 28. Incorporar al listado final y cotejar licencia de la imagen.",
+      "dependency": "Añadir al listado final de referencias cuando se reconstruya. Verificar la autoría/licencia del recurso visual de Figura 28.",
+      "recordedStatus": "Referencia APA s. f. y correcciones de período/audiencia aplicadas en v19; listado final e imagen siguen pendientes.",
+      "evidence": "La página oficial se titula Un llamado de la juventud para priorizar la salud mental, se identifica como campaña #DIME y no muestra fecha editorial. En la página, 2021 es año de las estadísticas, y 11–30 describe a la población de la estadística de suicidio, no al público objetivo. La guía APA indica organización como autora sin fecha, título de página en cursiva y omitir el sitio cuando autor y sitio coinciden."
+    },
+    {
+      "id": "APA-026",
+      "priority": "Media",
+      "issue": "La fuente principal de EN MI MENTE mezcla página de campaña sin fecha visible y año 2025",
+      "sourceLocation": "PDF octubre p. 90",
+      "proposedCorrection": "Aplicada en v20: citar la página de campaña como UNICEF (s. f.) y rotular 2025 como año de lanzamiento, verificado separadamente por el comunicado oficial. Añadir ambas obras al listado final cuando se reconstruya.",
+      "dependency": "Incorporar la página de campaña y el comunicado en la lista final APA. Confirmar si las fotos y materiales visuales tienen créditos/licencias propios.",
+      "recordedStatus": "La landing page queda citada como s. f. en v20; lanzamiento en 2025 verificado por comunicado oficial. Falta el listado final de referencias.",
+      "evidence": "La página oficial EN MI MENTE muestra el título y contenido de la campaña, pero no fecha editorial. El comunicado oficial asociado está fechado 9 de octubre de 2025 y en su cuerpo informa el lanzamiento el 10 de octubre; confirma el año de lanzamiento, no la fecha de publicación de la landing page."
+    },
+    {
+      "id": "APA-027",
+      "priority": "Alta",
+      "issue": "La fuente de #QueNoTePase aparece fechada en 2023, aunque la página oficial enlazada es de 2025",
+      "sourceLocation": "PDF octubre p. 93; página ChildFund https://www.childfundgt.org/blog/visualizar.php?id=9",
+      "proposedCorrection": "Cambiar la fecha a 2025 en la copia de corrección y añadir referencia basada en Domínguez, L. (2025, 1 de agosto).",
+      "dependency": "Trasladar a la base editable cuando esté disponible. La referencia textual no acredita autoría ni licencia de las fotografías usadas como Figuras 34–36.",
+      "recordedStatus": "Autor, fecha, título y URL oficial funcional corregidos en la copia de lectura APA-027 v18; referencia candidata cotejada con ChildFund.",
+      "evidence": "ChildFund muestra byline Luis Domínguez y fecha Agosto 01, 2025; el texto describe el lanzamiento de la campaña con SVET y el Ministerio de Gobernación. La URL canónica accesible usa www; la forma sin www redirige a la portada."
+    },
+    {
+      "id": "APA-028",
+      "priority": "Alta",
+      "issue": "La cita Zimmerman (2000) no tiene entrada candidata en las 83 referencias principales",
+      "sourceLocation": "PDF octubre p. 78; capítulo Zimmerman 2000, p. 46 del texto completo cotejado",
+      "proposedCorrection": "Si se confirma que esta fue la obra consultada, usar la referencia APA candidata y revisar la paráfrasis como: Zimmerman (2000) plantea que el empoderamiento psicológico incluye creencias sobre la propia competencia, esfuerzos por ejercer control y comprensión del entorno sociopolítico (p. 46). Mantener la aplicación al clutter como interpretación del proyecto.",
+      "dependency": "Confirmar la obra usada por el autor",
+      "recordedStatus": "Metadatos y contenido de p. 46 verificados; la paráfrasis actual no corresponde; falta confirmar que fue la obra efectivamente consultada antes de incorporar la cita y referencia.",
+      "evidence": "Springer confirma autor, año, subtítulo, páginas 43–63 y DOI https://doi.org/10.1007/978-1-4615-4193-6_2. El capítulo completo localizado en un portal académico, p. 46, define el empoderamiento psicológico por competencia percibida, esfuerzos de control y comprensión del entorno sociopolítico; no dice «tomar conciencia de sí y actuar por el bienestar»."
+    },
+    {
+      "id": "APA-029",
+      "priority": "Alta",
+      "issue": "Holmes et al. (2019) se atribuye a afirmaciones de intervención y beneficios terapéuticos del decluttering sin referencia confirmada",
+      "sourceLocation": "PDF de octubre, p. 80; PDF preservado de marzo, pp. 48 y 52; sección sobre Declutter",
+      "proposedCorrection": "Confirmar con el autor si esta fue la obra consultada. Si sí, corregir la paráfrasis para limitarla a los resultados medidos (caos doméstico, desarrollo del autocontrol y conducta de riesgo adolescente) y dejar de atribuirle beneficios terapéuticos del decluttering, mejora del sueño/concentración, procrastinación, autodisciplina o reducción de ansiedad/depresión. Si no, identificar la fuente original; no completar la referencia por coincidencia parcial.",
+      "dependency": "Confirmar uso efectivo con el autor; el candidato no respalda las afirmaciones de intervención/terapia y beneficios de salud",
+      "recordedStatus": "Candidato primario localizado; relación temática parcial",
+      "evidence": "La cita acompaña en la versión de marzo una afirmación de que simplificar el entorno reduce estrés, mejora sueño y concentración (p. 48), y que decluttering como terapia conductual reduce procrastinación, fortalece autodisciplina, genera logro y contrarresta ansiedad/depresión leve (p. 52). La versión de octubre conserva la afirmación terapéutica en p. 80. No hay entrada Holmes et al. (2019) entre las 83 referencias principales de marzo. Se localizó un candidato primario con autores Christopher Holmes et al. (2019), sobre caos doméstico (definido incluyendo confusión, clutter y ruido), trayectorias de autocontrol en menores y conducta de riesgo en adolescencia. El estudio asocia mayor caos doméstico y menor nivel socioeconómico con trayectorias menos adaptativas de autocontrol; no estudia decluttering como terapia ni prueba los efectos terapéuticos y de salud citados. Registro oficial PubMed/PMC: https://pubmed.ncbi.nlm.nih.gov/30178385/ ; texto completo: https://pmc.ncbi.nlm.nih.gov/articles/PMC6547367/ . La coincidencia de apellido/año y tema de entorno no prueba que sea la obra citada."
+    },
+    {
+      "id": "APA-030",
+      "priority": "Alta",
+      "issue": "Dos rastros Ferrari y Roster (2018) mezclan títulos/DOI y uno de los DOI citados pertenece a otra obra",
+      "sourceLocation": "PDF recibido del 18-10-2026, p. 42; IDML Stories u619e y u1ed5; inventario REF-021",
+      "proposedCorrection": "Tratar la referencia Springer de Ferrari y Roster con DOI 9679-4 como candidata verificada y corregir el registro mal asignado solo si se confirma que fue la obra consultada. Revisar el texto completo o fuente consultada para confirmar si respalda saturación, tiempo de búsqueda y desgaste mental; si no, reformular para ceñirse al hallazgo sobre procrastinación, clutter y satisfacción con la vida. Mantener Story u619e y REF-021 como transcripciones fuente inalteradas.",
+      "dependency": "Confirmar obra consultada y revisar el pasaje citado antes de corregir la copia derivada",
+      "recordedStatus": "Metadatos editoriales y DOI verificados; correspondencia con cita de p. 42 y respaldo específico pendientes",
+      "evidence": "El PDF recibido del 18 de octubre contiene una cita a Ferrari y Roster (2018), en p. 42. Acompaña la afirmación de que postergar la selección y el descarte evita malestar inmediato, pero acumula saturación, tiempo de búsqueda y desgaste mental. Story u619e atribuye a Ferrari y Roster otro título, “Delaying disposing of possessions: Examining ‘regular’ and ‘hoarder’ types”, con DOI 10.1007/s12144-016-9528-3, que no devuelve registro en Crossref. REF-021 dice “Delaying, cluttering, and hoarding: How each behavior affects the quality of life”, pero asigna el DOI 10.1007/s12144-017-9680-y; la ficha oficial de Springer asigna ese DOI a Prohaska et al. (2018), “Assessing ‘Clutter’ and Related Constructs with a Non-White, Urban Sample”, Current Psychology, 37, 432–435. La ficha oficial de Springer identifica la obra de Ferrari y Roster como “Delaying Disposing: Examining the Relationship between Procrastination and Clutter across Generations”, Current Psychology, 37(2), 426–431, DOI 10.1007/s12144-017-9679-4. El resumen editorial confirma una relación entre procrastinación y problemas de clutter y menor satisfacción con la vida en adultos mayores, pero no confirma por sí solo todos los componentes específicos de la oración de p. 42. https://link.springer.com/article/10.1007/s12144-017-9679-4 ; https://link.springer.com/article/10.1007/s12144-017-9680-y ; https://api.crossref.org/works/10.1007%2Fs12144-016-9528-3"
+    },
+    {
+      "id": "APA-031",
+      "priority": "Alta",
+      "issue": "Diener et al. (2018) no tiene entrada equivalente en inventario y la fuente candidata no respalda la afirmación de p. 79",
+      "sourceLocation": "PDF recibido 18-10-2026, p. 79",
+      "proposedCorrection": "Confirmar que este fuera el artículo consultado. Si sí, agregar su ficha APA 7 solo en una copia y sustituir o reformular la afirmación con una fuente que realmente apoye la relación entre valores y estilo de vida. No atribuir esa proposición a Diener et al. por similitud temática.",
+      "dependency": "Confirmación del autor y fuente que respalde coherencia valores-estilo de vida",
+      "recordedStatus": "Candidato bibliográfico y metadatos identificados; obra consultada y afirmación exacta pendientes",
+      "evidence": "La cita acompaña la afirmación de que la satisfacción vital está asociada a la coherencia entre valores personales y estilo de vida. Nature confirma el artículo de revisión de Diener, Oishi y Tay, “Advances in subjective well-being research”, Nature Human Behaviour, 2(4), 253–260, DOI 10.1038/s41562-018-0307-6; trata el bienestar subjetivo y sus predictores, pero no respalda en el resumen la afirmación específica de coherencia valores-estilo de vida. No aparece en las 83 referencias principales IDML de marzo. https://www.nature.com/articles/s41562-018-0307-6"
+    },
+    {
+      "id": "APA-032",
+      "priority": "Alta",
+      "issue": "Evans y McCoy (1998) no tiene entrada en inventario; la afirmación sobre cortisol y bienestar no está respaldada por el candidato",
+      "sourceLocation": "PDF recibido 18-10-2026, pp. 82 y 84",
+      "proposedCorrection": "En la PWA activa y en la copia derivada v3 se sustituyó la atribución a Evans y McCoy por una síntesis correlacional de Saxbe y Repetti (2010), REF-065, ya incluido en el inventario de marzo. En pp. 82 y 84 se excluyeron causalidad, reducción general del cortisol y eficacia de enseñar minimalismo; se mantiene la evaluación con la población objetivo como requisito. V3: entregables/TESIS-Josue-Diaz-copia-lectura-APA-032-v3-2026-10-18.pdf; SHA-256 4540505EAF7B4B547DEA0B904F626ECAF6AB4277FEBCC5446818E7EB137D1C51.",
+      "dependency": "Completar la lista de referencias de la edición académica; cotejar en ella la entrada APA 7 de Saxbe y Repetti (2010) y conservar esta atribución solo si refleja la fuente efectivamente usada.",
+      "recordedStatus": "Texto corregido en PWA y copia derivada v3; APA-032 sigue abierto porque el PDF de octubre carece de referencias finales y no confirma la fuente originalmente consultada. No declarar cierre APA.",
+      "evidence": "La cita del PDF de octubre p. 82 atribuye a Evans y McCoy la reducción de cortisol y el aumento del bienestar por ambientes visualmente equilibrados. El texto completo de “When Buildings Don’t Work” (DOI 10.1006/jevp.1998.0089) formula una taxonomía teórica de diseño y estrés, declara que había poca evidencia de efectos directos de rasgos específicos sobre salud y no menciona cortisol. La obra identificada no respalda esa afirmación. El inventario principal de marzo sí incluye una fuente más ajustada: Saxbe y Repetti (2010), REF-065, sobre descripciones de clutter/restauración del hogar, estado de ánimo y pendientes diurnas de cortisol; ya aparece citada en otra parte del texto. Estudio observacional de 60 cónyuges con ingresos duales: los resultados de hogar estresante/restaurativo fueron asociaciones, con efectos reportados en mujeres; no midió “equilibrio visual” ni una intervención. La referencia alternativa es candidata para reformular, no prueba de que fuera la fuente originalmente usada. Fuentes: https://doi.org/10.1006/jevp.1998.0089 ; https://pubmed.ncbi.nlm.nih.gov/19934011/ ; https://doi.org/10.1177/0146167209352864 La atribución causal relacionada de la p. 84 se cotejó también; ambas formulaciones excedían el estudio. En la copia derivada v3 se ajustaron las pp. 82 y 84 a resultados observacionales y límites de causalidad; el PDF fuente permanece intacto. El v3 sigue sin lista de referencias académica final."
+    },
+    {
+      "id": "APA-033",
+      "priority": "Alta",
+      "issue": "Edición 2002 de Kolberg y Nadeau puede no respaldar varias afirmaciones digitales citadas como 2002",
+      "sourceLocation": "PDF recibido 18-10-2026, pp. 39, 63, 67, 68, 70, 80–81; REF-035 del inventario IDML",
+      "proposedCorrection": "La entrada PWA 1.3.2.2 ya no atribuye a Kolberg y Nadeau (2002) una definición no cotejada de clutter digital y retira efectos sobre cortisol, fatiga, irritabilidad y sueño sin respaldo confirmado. Mantener la descripción como definición operativa del proyecto y las consecuencias como preguntas por validar. Cotejar el ejemplar y páginas realmente consultados antes de restaurar atribuciones. La copia derivada v29 ya actualiza pp. 70–71 y fue revisada por extracción y render; la edición/páginas originales aún no están confirmadas.",
+      "dependency": "Identificar el ejemplar realmente consultado y cotejar las páginas pertinentes; reconstruir bibliografía final desde la base vigente",
+      "recordedStatus": "Afirmaciones depuradas en PWA 1.3.2.2 y sincronizadas; copia derivada v29 actualizada en pp. 70–71; edición/páginas originales sin confirmar",
+      "evidence": "Google Books y WorldCat confirman el libro de 2002, ADD-Friendly Ways to Organize Your Life, de Judith Kolberg y Kathleen G. Nadeau, Brunner-Routledge, ISBN 9781583913581. La ficha oficial de Routledge describe la 2.ª edición con copyright 2017 y su tabla de contenido detalla una parte de organización digital con los capítulos Managing Digital Distractions y The Internet Black Hole. Esto confirma el contenido de esa edición, pero no identifica el ejemplar consultado ni descarta contenido relacionado en la edición de 2002. Google Books muestra además un registro de 2012. Esto pone en duda la atribución de las afirmaciones sobre archivos/notificaciones/saturación cognitiva a la edición de 2002, pero no prueba qué ejemplar se consultó ni que la edición anterior no trate esos conceptos. https://www.routledge.com/ADD-Friendly-Ways-to-Organize-Your-Life-Strategies-that-Work-from-an-A/Kolberg-Nadeau/p/book/9781138190733 ; https://books.google.com/books/about/ADD_friendly_Ways_to_Organize_Your_Life.html?id=B1iOcR1c-vQC ; https://search.worldcat.org/title/ADD-friendly-ways-to-organize-your-life/oclc/48144440"
+    },
+    {
+      "id": "APA-034",
+      "priority": "Media",
+      "issue": "REF-064 (Sasaki, 2021), probable referencia sin cita en el PDF de octubre",
+      "sourceLocation": "Inventario IDML de marzo; PDF recibido 18-10-2026, pp. 29, 62, 71, 79 y 85",
+      "proposedCorrection": "Si se usó Hello, Habits y respalda un pasaje, añadir la cita allí; si no fue usada, retirarla de la bibliografía final. No cambiar las citas de 2017.",
+      "dependency": "Confirmar si Hello, Habits fue consultado y cotejar la lista bibliográfica final",
+      "recordedStatus": "Probable referencia sin cita; verificar en la versión final",
+      "evidence": "El inventario identifica Hello, Habits (2021), pero el PDF de octubre no presenta cita Sasaki (2021) ni título; las menciones sobre minimalismo citan Sasaki (2017), REF-063. La lista bibliográfica final no está incluida en el PDF."
+    },
+    {
+      "id": "APA-035",
+      "priority": "Alta",
+      "issue": "La cita textual de Lupton en p. 81 precede afirmaciones causales sobre estrés, concentración y bienestar cuyo respaldo no está verificado",
+      "sourceLocation": "PDF recibido del 18-10-2026, p. 81; oración posterior a la cita Lupton (2011, p. 19)",
+      "proposedCorrection": "Cotejar las afirmaciones contra el ejemplar y localizar la fuente empírica que sustente los efectos; si son una interpretación del proyecto, presentarlas como tal y retirar el lenguaje causal no respaldado.",
+      "dependency": "Ejemplar de Lupton y fuente de los efectos psicológicos afirmados; confirmar la referencia consultada",
+      "recordedStatus": "Brecha de respaldo documentada; no corregida hasta identificar la fuente o el carácter interpretativo del pasaje.",
+      "evidence": "La cita textual localizada en p. 19 menciona orden, espacio y jerarquía visual. La oración siguiente afirma efectos directos sobre la mente: que la saturación puede generar estrés y una disposición limpia facilita concentración y bienestar. No se cotejó el libro completo ni una fuente empírica para esas afirmaciones; la cita precedente no prueba por sí sola ese respaldo."
+    },
+    {
+      "id": "APA-036",
+      "priority": "Alta",
+      "issue": "Cita Sweeten et al. (2018) en la entrada PWA 4.1.1.5 sin referencia en el paquete",
+      "sourceLocation": "PWA: atlas-clutter-source-4-1-1-5; PDF recibido 18-10-2026, p. 39 y sección Referencias (pp. 161–170)",
+      "proposedCorrection": "Se añadió una entrada Fuente APA 7 separada bajo Referencias en el bundle PWA. Mantenerla como referencia incorporada durante la revisión de la PWA; no afirmar que aparecía en el PDF ni que fue la obra consultada originalmente. El estudio respalda los resultados descritos en su resumen, no efectos clínicos ni todas las afirmaciones sobre clutter.",
+      "dependency": "Revisar la cita completa de 4.1.1.5 contra el artículo y decidir con la dirección académica si esta fuente incorporada se mantiene en la versión final",
+      "recordedStatus": "Añadida al bundle de la PWA; falta validar en navegador actualizado y confirmar inclusión en la bibliografía académica final",
+      "evidence": "La entrada actual cita Sweeten et al. para acumulación de archivos, dificultad para borrar y ansiedad asociada, pero Sweeten no figura en las 83 referencias IDML. El PDF de octubre p. 39 conserva una afirmación distinta atribuida a Kolberg y Nadeau (2002). El portal oficial de Northumbria confirma autoría, año, revista, volumen, páginas, DOI y resumen de un estudio cualitativo con 45 participantes: https://researchportal.northumbria.ac.uk/en/publications/digital-hoarding-behaviours-underlying-motivations-and-potential-/"
+    }
+  ]
+}

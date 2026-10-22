@@ -1,0 +1,86 @@
+{
+  "format": "proyecto-grado-pwa-content-patches",
+  "version": 1,
+  "taskId": "APA-028+APA-001",
+  "title": "Correcciones APA-028 y APA-001: Zimmerman y Becker",
+  "sourceDataRevision": "reconciled-2026-10-19-d0d5f918-apa028-zimmerman-p46-r1",
+  "patches": [
+    {
+      "entryId": "atlas-clutter-source-4-3-1",
+      "field": "content",
+      "operation": "replace-exact-substring",
+      "oldValue": "El concepto de empoderamiento, originalmente vinculado al desarrollo social, ha sido ampliado en el campo de la psicología para referirse a la capacidad del individuo de tomar conciencia de sí mismo y actuar en función de su bienestar (Zimmerman, 2000). Desde esta perspectiva, el empoderamiento frente al Clutter implica que las personas —en este caso, los estudiantes universitarios— fortalezcan sus recursos internos para enfrentar los efectos del desorden, reconociendo la relación entre su espacio externo y su estado mental.",
+      "oldValueSha256Utf8": "edad514ce07da27445b61257c88d5254a36d2dd3a4eddc6811eeb0f392a9b4ab",
+      "proposedValue": "Zimmerman (2000) señala que el empoderamiento psicológico incluye creencias sobre la propia competencia, esfuerzos por ejercer control y comprensión del entorno sociopolítico (p. 46). Aplicada al Clutter, esta noción orienta una pregunta por explorar: cómo describen las personas su capacidad de decisión ante el desorden y la relación entre su espacio externo y su estado mental. Es una interpretación del proyecto, no una conclusión de Zimmerman.",
+      "proposedValueSha256Utf8": "4f299deaa5bccd75aba46b5092974b096a4a1eaa8a0537a73e9f56dc3ce456af",
+      "expectedContentBlocks": null,
+      "evidence": [
+        {
+          "type": "primary-chapter-text",
+          "locator": "printed page 46; page 4 in the 22-page scan",
+          "url": "https://moodle2.units.it/pluginfile.php/321798/mod_resource/content/0/Zimmerman%202000.pdf",
+          "verified": "The page states that psychological empowerment includes beliefs about competence, efforts to exert control, and understanding of the socio-political environment. The page was visually inspected from a temporary downloaded copy; it was not retained in the project."
+        },
+        {
+          "type": "publisher-metadata",
+          "locator": "chapter record",
+          "url": "https://doi.org/10.1007/978-1-4615-4193-6_2",
+          "verified": "Springer identifies Marc A. Zimmerman, chapter title, year 2000, and chapter pages 43–63."
+        },
+        {
+          "type": "project-revision",
+          "locator": "PDF v67, physical page 78; in-text citation p. 46",
+          "path": "entregables/TESIS-Josue-Diaz-copia-lectura-indice-figura-11-v67-2026-10-19.pdf",
+          "verified": "The latest available project PDF contains the revised concept and the p. 46 locator; this proves the project's current wording, not which edition the author personally consulted."
+        }
+      ],
+      "limits": [
+        "The chapter content and cited page are verified against the scanned chapter, but the author has not confirmed that this exact edition/copy was consulted.",
+        "This is not a final APA reference-list entry. The October PDF has no legible reference list; APA-028 still needs to reconcile the final bibliography and confirm the consulted edition.",
+        "On 2026-10-19, the active PWA profile applied this exact patch after the in-app confirmation. The saved PWA profile was then checked for the proposed wording; the PWA reported its local data up to date.",
+        "No other citation, entry ID, or original document was changed. This patch does not resolve the missing final reference list or confirm which edition the author personally consulted."
+      ]
+    },
+    {
+      "entryId": "idml-r1-u1ed5",
+      "field": "content",
+      "operation": "replace-exact-substring",
+      "oldValue": "Becker, J. (2016). The more of less: Finding the life you want under everything you own. WaterBrook.",
+      "oldValueSha256Utf8": "9ae15c2e033945fa1a4607a062c79c0d2a5a4a459ba14141b8696dcfd9212d5c",
+      "proposedValue": "Becker, J. (2016). The more of less: Finding the life you want under everything you own. WaterBrook.\nBecker, J. (2018). *The minimalist home: A room-by-room guide to a decluttered, refocused life* (E. Stanford, Ed.). WaterBrook.",
+      "proposedValueSha256Utf8": "c776078186ebf242cc4a93d2a4910aa50f17b78d9eebde816c91f7a8515d2129",
+      "expectedContentBlocks": null,
+      "evidence": [
+        {
+          "type": "publisher-catalog",
+          "locator": "2018 edition, ISBN 9781601427991",
+          "url": "https://www.penguinrandomhouse.com/books/250883/the-minimalist-home-by-joshua-becker/9781601427991/",
+          "verified": "Penguin Random House identifies Joshua Becker as author, WaterBrook as publisher, title, and publication date December 18, 2018."
+        },
+        {
+          "type": "publisher-sample",
+          "locator": "title/copyright page and printed pages 10–14",
+          "url": "https://waterbrookmultnomah.com/wp-content/uploads/pdf/Sneak-Peek-Minimalist-Home-1.pdf",
+          "verified": "The official WaterBrook sample identifies the title, subtitle, Becker with Eric Stanford, ISBN, copyright 2018 and first edition; printed pages 10–14 support the bounded paraphrase already present in the PWA."
+        },
+        {
+          "type": "author-testimonial",
+          "locator": "author testimonial for Edit Resource",
+          "url": "https://editresource.com/",
+          "verified": "Joshua Becker states that Eric Stanford helped with the book and did more than edit it; the title page credits Stanford with Becker."
+        },
+        {
+          "type": "apa-style",
+          "locator": "whole authored book; authored book with editor credited on cover",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/references/examples/book-references",
+          "verified": "APA Style specifies author, copyright year, title, and publisher for whole authored books, and instructs that a credited editor on the cover be included in parentheses after the title."
+        }
+      ],
+      "limits": [
+        "The PWA body cites Becker (2018), names The Minimalist Home, and uses the page range verified in the publisher sample. The exact physical/digital copy consulted by the author has not been directly inspected.",
+        "The reference records Eric Stanford as editor based on the cover credit and Joshua Becker’s first-party testimonial; no coauthorship is inferred.",
+        "This exact-string patch preserves the existing Becker (2016) reference and appends the candidate 2018 reference; it preserves all other entry fields and marks the local copy edited."
+      ]
+    }
+  ]
+}
