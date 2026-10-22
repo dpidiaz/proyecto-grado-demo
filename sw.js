@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'cuaderno-grado-demo-799dc3f-';
-const CACHE_NAME = 'cuaderno-grado-demo-799dc3f-shell-youtube-toggle-v1';
+const CACHE_NAME = 'cuaderno-grado-demo-799dc3f-shell';
 // Keep this cache across shell releases so previously available offline media survives updates.
 const MEDIA_CACHE_NAME = 'cuaderno-grado-demo-799dc3f-media';
 const APP_FILES = ['./', './index.html', './styles.css', './atlas-outline.js', './numbering.js', './app.js', './manifest.webmanifest', './favicon.svg', './icon-192.png', './icon-512.png', './importaciones/contenido-proyecto-autosuficiente-v3.json', './importaciones/contenido-idml-para-importar.json', './importaciones/correcciones-apa-028-001.json', './importaciones/auditoria-apa-pdf-octubre-2026.json', './importaciones/apa-review-register-2026-10-18.json', './importaciones/respaldo-local-pre-unificacion-2026-10-18.json', './importaciones/registro-imagenes-generadas-2026.json', './importaciones/auditoria-figuras-apa-2026-10-20.json', './importaciones/auditoria-referencias-apa7-pwa-2026-10-21.json', './importaciones/registro-revision-academica-apa-2026-10-21.json', './offline-media-manifest.json'];

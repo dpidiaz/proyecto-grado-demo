@@ -15310,48 +15310,10 @@ function registerLibraryEvents() {
   });
 }
 
-let youtubePlaybackRequested = false;
-function registerYouTubePlaybackControl() {
-  const button = $('#youtube-toggle');
-  const player = $('#youtube-audio-player');
-  const playlistId = 'PLCA07CA8E6C333729';
-  const playerOrigin = 'https://www.youtube-nocookie.com';
-  const setPlaybackState = (playing) => {
-    youtubePlaybackRequested = playing;
-    button.setAttribute('aria-pressed', String(playing));
-    button.setAttribute('aria-label', `${playing ? 'Pausar' : 'Reproducir'} música de YouTube`);
-  };
-
-  button.addEventListener('click', () => {
-    if (!youtubePlaybackRequested) {
-      if (!player.src) {
-        const params = new URLSearchParams({
-          listType: 'playlist',
-          list: playlistId,
-          autoplay: '1',
-          enablejsapi: '1',
-          playsinline: '1',
-          rel: '0',
-          origin: location.origin
-        });
-        player.src = `${playerOrigin}/embed?${params}`;
-      } else {
-        player.contentWindow?.postMessage(JSON.stringify({ event: 'command', func: 'playVideo', args: [] }), playerOrigin);
-      }
-      setPlaybackState(true);
-      return;
-    }
-
-    player.contentWindow?.postMessage(JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), playerOrigin);
-    setPlaybackState(false);
-  });
-}
-
 function registerEvents() {
   setTheme(document.documentElement.dataset.theme, false);
   refreshGitHubSyncControl();
   registerAtlasDragEvents();
-  registerYouTubePlaybackControl();
   $('#github-sync-button').addEventListener('click', toggleGitHubSync);
   $('#force-refresh-button').addEventListener('click', forceRefreshApplication);
   $('#apa-historical-snapshot').addEventListener('toggle', () => {
